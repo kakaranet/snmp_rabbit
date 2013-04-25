@@ -11,5 +11,5 @@ start(normal, []) ->
     application:start(otp_mibs),
     otp_mib:load(snmp_master_agent),
     os_mon_mib:load(snmp_master_agent),
-    rabbit_snmp_sup:start_link().
+    snmp_rabbit_sup:start_link().
 stop(_State) -> ok.

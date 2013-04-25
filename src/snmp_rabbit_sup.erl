@@ -8,4 +8,4 @@ start_link() ->
     supervisor:start_link({local, ?MODULE}, ?MODULE, _Arg = []).
 
 init([]) ->
-    {ok, {{one_for_one, 3, 10}, [?CHILD(rabbit_snmp_agent, worker)]}}.
+    {ok, {{one_for_one, 3, 10}, [?CHILD(snmp_rabbit_agent, worker)]}}.
