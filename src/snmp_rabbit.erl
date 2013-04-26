@@ -6,6 +6,7 @@ start(normal, []) ->
     application:stop(mnesia),
     application:stop(otp_mibs),
     application:stop(snmp),
+    application:start(folsom),
     mnesia:start(),
     application:start(snmp),
     application:start(otp_mibs),

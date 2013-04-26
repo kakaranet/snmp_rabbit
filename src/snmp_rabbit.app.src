@@ -5,4 +5,4 @@
   {registered, []},
   {mod, {snmp_rabbit, []}},
   {env, []},
-  {applications, [kernel, stdlib, sasl, mnesia, crypto, snmp, os_mon, otp_mibs, rabbit]}]}.
+  {applications, [kernel, stdlib, sasl, mnesia, crypto, snmp, os_mon, otp_mibs, rabbit, folsom]}]}.
